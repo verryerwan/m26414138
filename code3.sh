@@ -1,5 +1,5 @@
-read a;
-        for ((i=1;i<=a;i++))
+read n;
+        for ((i=1;i<=n;i++))
         {
                 for ((j=1;j<=i;j++))
                 {
@@ -7,7 +7,7 @@ read a;
                 }
                 echo "";
         }
-        for ((i=a;i>1;i--))
+        for ((i=n;i>1;i--))
         {
                 for ((j=1;j<i;j++))
                 {
