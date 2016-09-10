@@ -4,5 +4,4 @@ then
 echo "Genap";
 else
 echo "Ganjil";
-f1
 
