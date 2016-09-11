@@ -1,13 +1,29 @@
-read a;
-for ((i=1;i<=a;i++))
-        {
-                for ((j=1;j<=i;j++))
+let i;
+let n=0;
+let a;
+read i;
+until ((n >= i * 2 + 1))
+do
+        for ((a=0;a<=i * 2 + 2;a++))
                 {
-                        echo -n "*";
+                        if (($n % 2 == 0))
+                        then
+                                if (($a % 2 == 0))
+                                then
+                                        echo -n "+";
+                                else
+                                        echo -n "-";
+                                fi
+                        else
+                                if (($a % 2 == 0))
+                                then
+                                        echo  -n "|";
+                                else
+                                        echo  -n $i;
+                                fi
+                        fi
                 }
-                echo "";
-        }
-
-
-
+echo "";
+let n++;
+done
 
