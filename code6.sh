@@ -19,8 +19,12 @@ do
                                 then
                                         echo  -n "|";
                                 else
-                                        echo  -n $i;
+                                        echo  -n "O";
                                 fi
                         fi
                 }
+
+echo "";
+let n++;
+done
 
